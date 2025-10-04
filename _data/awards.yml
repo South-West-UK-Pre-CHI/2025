@@ -1,0 +1,9 @@
+- name: "Best Paper Award"
+  winner: "Jane Doe"
+  talk_title: "Innovative Research in HCI"
+  talk_url: "/program/#talk-1"
+
+- name: "Best Student Presentation"
+  winner: "John Smith"
+  talk_title: "Future of User Interfaces"
+  talk_url: "/program/#talk-2"

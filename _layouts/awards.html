@@ -1,0 +1,38 @@
+{% include partials/header.html %}
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">{{ page.title }}</h1>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead class="table-light">
+                        <tr>
+                            <th scope="col">Award</th>
+                            <th scope="col">Winner(s)</th>
+                            <th scope="col">Talk/Workshop</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for award in site.data.awards %}
+                        <tr>
+                            <td><strong>{{ award.name }}</strong></td>
+                            <td>{{ award.winner }}</td>
+                            <td>{% if award.talk_url %}<a href="{{ award.talk_url }}" target="_blank">{{ award.talk_title }}</a>{% else %}{{ award.talk_title }}{% endif %}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    {% if site.data.awards.size == 0 %}
+    <div class="alert alert-info text-center">
+        Award information will be announced soon. Please check back later.
+    </div>
+    {% endif %}
+</div>
+
+{% include partials/footer.html %}
