@@ -116,11 +116,11 @@ conference:
 
   # Information boxes
   info_bars:
-    - title: Voting now open!
+    - title: Thanks for Attending South-West UK Pre-CHI 2025!
       color: secondary
       main_only: false
       text: |
-        Please vote via the Voting tab above.
+        Hopefully we'll see you again next year.
 
   # Live indications
   live:
